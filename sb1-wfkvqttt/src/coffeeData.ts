@@ -1,0 +1,201 @@
+import { Coffee } from '../types/coffee';
+
+export const coffeeData: Coffee[] = [
+  {
+    id: 'guatemala',
+    name: 'Guatemala Antigua',
+    origin: 'Guatemala',
+    prefix: 'GT-AN',
+    description: 'Zengin, çikolata ve baharat notalarıyla dengeli bir kahve. Yüksek rakımda yetişen Arabica çekirdeklerinden elde edilir.',
+    altitude: '1500-1700 m',
+    process: 'Yıkanmış',
+    variety: 'Bourbon, Caturra, Catuai',
+    acidity: 'Parlak, Canlı',
+    tastingNotes: ['Çikolata', 'Baharat', 'Kuruyemiş', 'Dengeli']
+  },
+  {
+    id: 'colombia',
+    name: 'Colombia Huila',
+    origin: 'Kolombiya',
+    prefix: 'CO-HU',
+    description: 'Genellikle karamel, fındık ve narenciye notaları taşıyan, tatlı ve hafif asitli bir kahve. Kolombiya\'nın Huila bölgesinde yetiştirilen Arabica türüdür.',
+    altitude: '1200-1800 m',
+    process: 'Yıkanmış',
+    variety: 'Caturra, Castillo, Colombia',
+    acidity: 'Orta-Yüksek, Zarif',
+    tastingNotes: ['Kırmızı Meyve', 'Karamel', 'Dengeli']
+  },
+  {
+    id: 'ethiopia',
+    name: 'Ethiopia Sidamo',
+    origin: 'Etiyopya',
+    prefix: 'ET-SI',
+    description: 'Çiçeksi, meyvemsi ve tatlı notalara sahip, genellikle limon ve bergamot tadı hissedilen bir kahve. Sidamo bölgesinde yetiştirilen doğal işlenmiş Arabica çekirdeklerindendir.',
+    altitude: '1400-2200 m',
+    process: 'Doğal & Yıkanmış',
+    variety: 'Yerli Heirloom',
+    acidity: 'Parlak, Şarapsı',
+    tastingNotes: ['Çiçeksi', 'Limon', 'Bergamot', 'Karmaşık']
+  },
+  {
+    id: 'uganda',
+    name: 'Uganda Bugisu',
+    origin: 'Uganda',
+    prefix: 'UG-BU',
+    description: 'Çikolata ve fındık notalarıyla bilinen, orta gövdeli ve tatlı bir kahve. Uganda\'nın Elgon Dağı bölgesinde yetiştirilen Arabica türüdür.',
+    altitude: '1600-2000 m',
+    process: 'Yıkanmış',
+    variety: 'SL14, SL28',
+    acidity: 'Orta, Şarapsı',
+    tastingNotes: ['Çikolata', 'Şarap', 'Baharat']
+  },
+  {
+    id: 'sumatra',
+    name: 'Sumatra Blue Batak',
+    origin: 'Endonezya',
+    prefix: 'SM-BB',
+    description: 'Baharatlı, topraksı ve ceviz notalarıyla tanınan, yoğun gövdeli ve düşük asitli bir kahve. Endonezya\'nın Sumatra adasında yetiştirilen Arabica türüdür.',
+    altitude: '1100-1300 m',
+    process: 'Gilling Basah',
+    variety: 'Typica, Ateng',
+    acidity: 'Düşük',
+    tastingNotes: ['Yoğun Gövde', 'Topraksı', 'Baharatlı']
+  },
+  {
+    id: 'costa-rica',
+    name: 'Costa Rica Tarrazu',
+    origin: 'Kosta Rika',
+    prefix: 'CR-TA',
+    description: 'Parlak asitli, temiz ve hafif meyve notaları içeren dengeli bir kahve. Tarrazu bölgesinde yetiştirilen kaliteli Arabica çekirdeklerindendir.',
+    altitude: '1200-1900 m',
+    process: 'Yıkanmış, Honey',
+    variety: 'Caturra, Catuai',
+    acidity: 'Parlak, Keskin',
+    tastingNotes: ['Temiz', 'Elma', 'Üzüm', 'Bal']
+  },
+  {
+    id: 'peru',
+    name: 'Peru Ecoforest',
+    origin: 'Peru',
+    prefix: 'PE-EC',
+    description: 'Genellikle yumuşak, hafif tatlı ve fındık, karamel notalarına sahip, düşük asitli bir kahve. Peru\'da yetiştirilen Arabica türüdür.',
+    altitude: '1200-1800 m',
+    process: 'Yıkanmış (Organik)',
+    variety: 'Typica, Caturra, Bourbon',
+    acidity: 'Orta, Yumuşak',
+    tastingNotes: ['Kuruyemiş', 'Sütlü Çikolata', 'Dengeli']
+  },
+  {
+    id: 'honduras',
+    name: 'Honduras',
+    origin: 'Honduras',
+    prefix: 'HN-HG',
+    description: 'Çikolata, karamel ve meyve notalarıyla yumuşak bir içim sunan, düşük asitli ve dengeli bir kahve. Honduras\'ta yetiştirilen Arabica çekirdeklerindendir.',
+    altitude: '1000-1500 m',
+    process: 'Yıkanmış',
+    variety: 'Caturra, Catuai, Bourbon<',
+    acidity: 'Orta, Yumuşak',
+    tastingNotes: ['Karamel', 'Çikolata', 'Tropikal Meyve']
+  },
+  {
+    id: 'brazil',
+    name: 'Brezilya Sul de Minas',
+    origin: 'Brezilya',
+    prefix: 'BR-SM',
+    description: 'Brezilya\'nın en büyük Arabica kahve üretim bölgelerinden biridir. Genellikle tatlı, karamel, fındık ve çikolata notalarına sahip, düşük asitli ve yumuşak içimli bir kahvedir.',
+    altitude: '800-1100 m',
+    process: 'Doğal',
+    variety: 'Bourbon, Catuai, Mundo Novo',
+    acidity: 'Düşük',
+    tastingNotes: ['Fındık', 'Kakao', 'Karamel', 'Yumuşak']
+  },
+  {
+    id: 'peru-papagayo',
+    name: 'Peru Papagayo',
+    origin: 'Peru',
+    prefix: 'PE-PG',
+    description: 'Peru\'nun yüksek dağ plantasyonlarında yetişen üst sınıf Arabica çekirdekleri. SHB (Strictly Hard Bean) ve EP (European Preparation) sertifikalı, 1. kalite bu kahve, meyve, çiçek ve tatlı tonlarda benzersiz bir lezzet profili sunar.',
+    altitude: '900-1300 m',
+    process: 'Yıkanmış',
+    variety: 'Typica, Caturra, Bourbon',
+    acidity: 'Düşük-Orta',
+    tastingNotes: ['Kuruyemiş', 'Sütlü Çikolata', 'Yumuşak']
+  },
+  {
+    id: 'espresso-blend',
+    name: 'Espresso Blend',
+    origin: 'Özel Harman',
+    prefix: 'ES-BL',
+    description: 'Farklı çekirdeklerin espresso demlemeye uygun bir şekilde harmanlanmasıyla oluşur. Yoğun gövdeli, krema oranı yüksek ve tat profili güçlüdür.',
+    altitude: 'Karma Rakım',
+    process: 'Karma İşlem',
+    variety: 'Karma Varyete',
+    acidity: 'Dengeli',
+    tastingNotes: ['Yoğun Gövde', 'Bitter Çikolata', 'Krema', 'Dengeli']
+  },
+  {
+    id: 'filter-blend',
+    name: 'Filtre Blend',
+    origin: 'Özel Harman',
+    prefix: 'FL-BL',
+    description: 'Filtre kahve demleme yöntemleri için özenle harmanlanmış çekirdekler. Dengeli asidite ve temiz içim profili sunar.',
+    altitude: 'Karma Rakım',
+    process: 'Karma İşlem',
+    variety: 'Karma Varyete',
+    acidity: 'Orta, Dengeli',
+    tastingNotes: ['Dengeli', 'Temiz İçim', 'Meyvemsi', 'Aromalı']
+  },
+  {
+    id: 'king-espresso',
+    name: 'THE KING OF ESPRESSO',
+    origin: 'Guatemala, Colombia, Costa Rica',
+    prefix: 'KE-BL',
+    description: 'Premium kahve bölgelerinden seçilmiş çekirdeklerin güçlü, yoğun kavrulmuş harmanı. Yoğun gövdeli, belirgin bitter çikolata notalarına sahip ve pürüzsüz bir sonuç.',
+    altitude: 'Karma Rakım',
+    process: 'Karma İşlem',
+    variety: 'Karma Varyete',
+    acidity: 'Düşük-Orta',
+    tastingNotes: ['Bitter Çikolata', 'Yoğun Gövde', 'Güçlü', 'Pürüzsüz']
+  },
+  {
+    id: 'hot-chocolate',
+    name: 'Sıcak Çikolata',
+    origin: 'Sıcak Keyif ve Huzur Serisi',
+    prefix: 'HC-SK',
+    description: 'Yoğun kakao, hafif süt kreması ve mükemmel denge. Doğal ve koruyucu içermeyen premium sıcak çikolata.',
+    isHotBeverage: true,
+    tasteProfile: 'Yoğun kakao – Hafif süt kreması – Denge',
+    ingredients: 'Doğal Kakao Tozu (%35), Süt Tozu, Hindistan Cevizi Şekeri, Bitter Çikolata Granülleri, Deniz Tuzu, Doğal Vanilya Ekstraktı. Koruyucu, renklendirici ve yapay aroma içermez.',
+    tastingNotes: ['Yoğun Kakao', 'Süt Kreması', 'Dengeli']
+  },
+  {
+    id: 'chai-tea-latte',
+    name: 'Chai Tea Latte',
+    origin: 'Sıcak Keyif ve Huzur Serisi',
+    prefix: 'CT-SK',
+    description: 'Zencefil, tarçın ve vanilya ile sütlü baharat dengesi. Gluten içermeyen, katkı ve koruyucu maddesiz.',
+    isHotBeverage: true,
+    tasteProfile: 'Zencefil – Tarçın – Vanilya – Sütlü Baharat Dengesi',
+    ingredients: 'Süt Tozu, Hindistan Cevizi Şekeri, Siyah Çay Ekstraktı (%6), Tarçın, Zencefil, Karanfil, Kakule, Karabiber, Doğal Vanilin. Gluten içermez. Katkı ve koruyucu maddesizdir.',
+    tastingNotes: ['Zencefil', 'Tarçın', 'Vanilya', 'Baharat']
+  },
+  {
+    id: 'salep',
+    name: 'Salep',
+    origin: 'Sıcak Keyif ve Huzur Serisi',
+    prefix: 'SL-SK',
+    description: 'Vanilya, tarçın ve doğal orkide aroması ile yumuşak doku. Yapay kıvam artırıcı, koruyucu ve renklendirici içermez.',
+    isHotBeverage: true,
+    tasteProfile: 'Vanilya – Tarçın – Doğal Orkide Aroması – Yumuşak Doku',
+    ingredients: 'Doğal Şeker Kamışı, Saf Salep Tozu (%3), Süt Tozu, Nişasta, Tarçın, Vanilya Ekstraktı. Yapay kıvam artırıcı, koruyucu ve renklendirici içermez.',
+    tastingNotes: ['Vanilya', 'Tarçın', 'Orkide', 'Yumuşak']
+  },
+  {
+    id: 'tanisma-paketi',
+    name: 'Tanışma Paketi',
+    origin: 'Özel Paket',
+    prefix: 'TP-PK',
+    description: 'Farklı kahve çeşitlerini keşfetmek isteyenler için özenle hazırlanmış tanışma paketi.',
+    tastingNotes: ['Çeşitli', 'Keşif', 'Özel Seçim']
+  }
+];
